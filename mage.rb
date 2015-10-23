@@ -1,7 +1,7 @@
 class Mage
   SCHOOL_OF_WIZARDRY = [ "Hogwarts", "General Assembly",
     "Xaviers School For The Gifted", "Jedi Training Academy",
-    "Local Community College", "French Culinary Institute"
+    "a Local Community College", "French Culinary Institute"
   ]
   def initialize(name, gender, mage_class, weapon)
     @name = name

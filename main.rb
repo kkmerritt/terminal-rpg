@@ -1,9 +1,12 @@
 txt = open("rpg.txt")
+
 require_relative("mage")
+require_relative("reader")
 
 #----set these to 0 whilst coding, good sir.
-scroll = 0.1  #0.1
-timer = 0.4   #0.4
+# global motherfucking variables up in here bitch!
+$scroll = 0.1  #0.1
+$timer = 0.4   #0.4
 
 print "\n"
 print "\n"
@@ -15,9 +18,9 @@ gets.chomp
 
 
 x = 1
-while x < 380
+while x < 450
   x = x + 1
-  sleep(scroll)
+  sleep($scroll)
   print txt.readline if x % 5 == 0
 end
 
@@ -25,7 +28,7 @@ end
 x = 5
 while x > 0
   print "-------------------------------    #{x}\n"
-  sleep(timer)
+  sleep($timer)
   x = x - 1
 end
 print "\n"
@@ -82,9 +85,17 @@ gets.chomp
 x = 5
 while x > 0
   print "-------------------------------    #{x}\n"
-  sleep(timer)
+  sleep($timer)
   x = x - 1
 end
+
+#---Level One OutPut
+
+levelone = Reader.new("one", 45)  #one to access one.txt, 45 for lines in file: one.txt
+levelone.levelOutput
+
+
+#----Level One End
 
 
 puts "End of Program hit a key to exit"
