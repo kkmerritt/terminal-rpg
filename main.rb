@@ -2,8 +2,8 @@ txt = open("rpg.txt")
 require_relative("mage")
 
 #----set these to 0 whilst coding, good sir.
-scroll = 0.0  #0.1
-timer = 0.0   #0.4
+scroll = 0.1  #0.1
+timer = 0.4   #0.4
 
 print "\n"
 print "\n"
